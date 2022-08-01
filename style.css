@@ -1,10 +1,19 @@
-* {
-  font-family: 'Work Sans', sans-serif;;
-}
+@import url("https://use.typekit.net/zbj5mey.css");
+
+/*@font-face {
+    font-family: 'Source Sans 3';
+    src: url('font/SourceSans3-Regular.woff2') format('woff2'),
+        url('fonts/SourceSans3-Regular.woff') format('woff'),
+        url('fonts/SourceSans3-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+} */
 
 body {
   height: 1000vh;
   transition: background 1s ease;
+  font-family: source-sans-3, sans-serif;
 }
 
 
