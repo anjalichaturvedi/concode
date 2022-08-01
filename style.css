@@ -1,0 +1,70 @@
+* {
+  font-family: 'Work Sans', sans-serif;;
+}
+
+body {
+  height: 1000vh;
+  transition: background 1s ease;
+}
+
+
+/* navbar */
+.navbar {
+  transition: all 0.4s;
+  background: auto;
+  font-size: 20px;
+}
+
+.navbar .nav-link {
+  color: #fff;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar .navbar-brand {
+  color: #fff;
+}
+
+/* Change navbar styling on scroll */
+.navbar.active {
+  background: auto;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+  color: #555;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+  color: #555;
+  text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+  color: #555;
+}
+/* Change navbar styling on small viewports */
+@media (max-width: 991.98px) {
+  .navbar {
+    background: auto;
+  }
+
+  .navbar .navbar-brand, .navbar .nav-link {
+    color: #555;
+  }
+}
+
+span {
+  color: #CAE5FF;
+}
+
+/* header */
+.header {
+  background: #2C3E50;
+  height: 500px;
+}
