@@ -21,8 +21,9 @@ body {
 .navbar {
   transition: all 0.4s;
   background: auto;
-  font-size: 20px;
+  font-size: 17px;
 }
+
 
 .navbar .nav-link {
   color: #fff;
@@ -48,6 +49,9 @@ body {
   color: #555;
 }
 
+ul {
+  margin-left: 35%;
+}
 .navbar.active .nav-link:hover,
 .navbar.active .nav-link:focus {
   color: #555;
