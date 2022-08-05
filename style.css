@@ -1,8 +1,12 @@
-body {
+* {
+  font-family: 'Roboto Mono', sans-serif;
+}
+  
+  body {
   height: 1000vh;
   transition: background 1s ease;
-  font-family: sans-serif;
   margin: 0px;
+  color: #27395B;
 }
 
 
@@ -12,16 +16,17 @@ body {
   background: auto;
   font-size: 17px;
   margin-top: 0px;
+  letter-spacing: -0.03em;
 }
 
 
 .navbar .nav-link {
-  color: #fff;
+  color: #27395B;
 }
 
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
-  color: #fff;
+  color: #27395B;
   text-decoration: none;
 }
 
@@ -59,9 +64,77 @@ body {
   }
 }
 
-span {
-  color: #CAE5FF;
-}3
 .menu li {
   width: auto;
+}
+
+span {
+  color: #CAE5FF;
+}
+
+.home {
+  justify-items: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.home h2 {
+  font-weight: 700;
+  font-size: 3.5em;
+  letter-spacing: -0.05em;
+  line-height: 1.1;
+  padding-top: 40vh;
+  padding-left: 50vh;
+}
+
+.home p {
+  padding-left: 37vh;
+  font-size: 1em;
+}
+
+.header-img img{
+  height:250px;
+  width:auto;
+  float: left;
+  position: absolute;
+  top: 25vh;
+  left: 40vh;
+}
+
+.button {
+  background-color: #27395B;
+  color: #fff;
+  padding: 5px 10px 5px 10px;
+  border-radius: 42px;
+  border: #27395B;
+  font-size: 0.9em;
+  margin-left: 8vh;
+  transition: transform .4s; /* Animation */
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  color: #fff;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+  color: #fff;
 }

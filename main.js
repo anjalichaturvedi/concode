@@ -10,15 +10,15 @@ $(function() {
 
 // scroll animation
 var body = document.getElementsByTagName('body')[0];
-body.style.backgroundColor = 'rgb(170,203,218)';
+body.style.backgroundColor = '#E1EBFF';
 
 // trigger this function every time the user scrolls
 window.onscroll = function (event) {
     var scroll = window.pageYOffset;
-    if (scroll < 100) {
+    if (scroll < 300) {
         // green
-        body.style.backgroundColor = 'rgb(170,203,218)';
-    } else if (scroll >= 100 && scroll < 600) {
+        body.style.backgroundColor = '#E1EBFF';
+    } else if (scroll >= 300 && scroll < 600) {
         // yellow
         body.style.backgroundColor = 'rgba(211,215,176,1)';
     } else if (scroll >= 600 && scroll < 1200) {
