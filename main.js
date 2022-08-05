@@ -35,3 +35,22 @@ window.onscroll = function (event) {
         body.style.backgroundColor = 'purple';
     }
 }
+
+// slick
+$(document).ready(function(){
+  $('.sponsors').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1300,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2
+        }
+      }
+    ]
+  });
+});

@@ -1,7 +1,11 @@
 * {
-  font-family: 'Roboto Mono', sans-serif;
+  font-family: 'DM Sans', sans-serif;
 }
-  
+
+html {
+  scroll-behavior: smooth;
+}
+
   body {
   height: 1000vh;
   transition: background 1s ease;
@@ -84,7 +88,7 @@ span {
   letter-spacing: -0.05em;
   line-height: 1.1;
   padding-top: 40vh;
-  padding-left: 50vh;
+  padding-left: 30vh;
 }
 
 .home p {
@@ -108,7 +112,7 @@ span {
   border-radius: 42px;
   border: #27395B;
   font-size: 0.9em;
-  margin-left: 8vh;
+  margin-left: 17vh;
   transition: transform .4s; /* Animation */
 }
 
@@ -130,7 +134,7 @@ span {
 }
 
 .button:hover span {
-  padding-right: 25px;
+  padding-right: 15px;
 }
 
 .button:hover span:after {
