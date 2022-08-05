@@ -54,3 +54,8 @@ $(document).ready(function(){
     ]
   });
 });
+
+// owl
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+});

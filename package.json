@@ -1,0 +1,22 @@
+{
+  "name": "package-lock.json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anjalichaturvedi/rewire.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anjalichaturvedi/rewire/issues"
+  },
+  "homepage": "https://github.com/anjalichaturvedi/rewire#readme",
+  "dependencies": {
+    "owl.carousel": "^2.3.4"
+  }
+}
