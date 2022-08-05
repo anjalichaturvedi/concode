@@ -1,19 +1,8 @@
-@import url("https://use.typekit.net/zbj5mey.css");
-
-/*@font-face {
-    font-family: 'Source Sans 3';
-    src: url('font/SourceSans3-Regular.woff2') format('woff2'),
-        url('fonts/SourceSans3-Regular.woff') format('woff'),
-        url('fonts/SourceSans3-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-} */
-
 body {
   height: 1000vh;
   transition: background 1s ease;
-  font-family: source-sans-3, sans-serif;
+  font-family: sans-serif;
+  margin: 0px;
 }
 
 
@@ -22,6 +11,7 @@ body {
   transition: all 0.4s;
   background: auto;
   font-size: 17px;
+  margin-top: 0px;
 }
 
 
@@ -49,9 +39,6 @@ body {
   color: #555;
 }
 
-ul {
-  margin-left: 35%;
-}
 .navbar.active .nav-link:hover,
 .navbar.active .nav-link:focus {
   color: #555;
@@ -74,10 +61,7 @@ ul {
 
 span {
   color: #CAE5FF;
-}
-
-/* header */
-.header {
-  background: #2C3E50;
-  height: 500px;
+}3
+.menu li {
+  width: auto;
 }
