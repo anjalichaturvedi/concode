@@ -117,7 +117,7 @@ span {
   position: relative;
   transition: 0.5s;
   color: #fff;
-  background: rgba(114, 146, 173, 0.0);
+  background: rgba(114, 146, 173, 0);
 }
 
 .reg-btn span:after {
@@ -143,11 +143,11 @@ span {
   position: fixed;
   height: 50px;
   width: 100%;
-  bottom:0px;
+  bottom: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #7292AD; 
+  background: #7292ad;
 }
 
 .cookie-banner p {
@@ -165,4 +165,79 @@ span {
   float: right;
   top: 15px;
   right: 10vh;
+}
+
+.about h1 {
+  margin-top: 350px;
+  text-align: center;
+}
+
+.about h5 {
+  text-align: center;
+}
+
+.numbers {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 20px;;
+}
+
+.reach {
+  width: 120px;
+  height: 224px;
+  background: #cae05a;
+  border-radius: 30px;
+}
+
+.workshops {
+  width: 150px;
+  height: 224px;
+  background: #e05a70;
+  border-radius: 30px;
+}
+
+.projects {
+  width: 138px;
+  height: 224px;
+  background: #e0965a;
+  border-radius: 30px;
+}
+
+.hackers {
+  width: 154px;
+  height: 224px;
+  background: #5ab6e0;
+  border-radius: 30px;
+}
+
+.sponsors {
+  width: 149px;
+  height: 224px;
+  background: #82e05a;
+  border-radius: 30px;
+}
+
+.bottom-align-text {
+  position: absolute;
+  bottom: 0;
+  text-align: left;
+  right: 50%;
+  left: 50%;
+}
+
+.abt-tb {
+ width: 100%;
+ margin-left: 30vh;
+ margin-right: 30vh;
+ margin-bottom: 30px;
+}
+
+.abt-tb h1 {
+  padding-top: 22vh;
+  bottom: 0;
+  padding-left: 10%;
+}
+
+.abt-tb h5 {
+  padding-left: 10%;
 }
