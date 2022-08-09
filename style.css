@@ -241,3 +241,79 @@ span {
 .abt-tb h5 {
   padding-left: 10%;
 }
+
+.summary-title {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 250px;
+}
+
+.summary-title h2 {
+  font-size: 40px;
+}
+
+.faq details {
+  color: black;
+  margin: 2rem;
+  border-radius: 10px;
+  background-color: #CAE05A;
+}
+
+.faq summary {
+  width: 100%;
+  padding: 20px;
+  padding-left: 25px;
+  font-size: 20px;
+  color: black;
+  transition-duration: 0.5s;
+  box-shadow: 0 10px 12px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.faq summary:hover {
+  color: black;
+}
+
+summary:focus {
+  outline: none;
+}
+
+.faq details p {
+  margin: 1em;
+  font-size: 16px;
+  padding-bottom: 10px;
+  color: black;
+}
+
+@keyframes open {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.faq summary {
+  font-size: 17px;
+}
+
+.faq a {
+  color: black;
+  text-decoration: underline;
+}
+
+.faq a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.owl-item {width: 128.906px; margin-right: 10px; background:powderblue; }
+
+
+/** to hide dots
+
+.owl-theme .owl-dots .owl-dot{ display:none!important;}
+
+**/
