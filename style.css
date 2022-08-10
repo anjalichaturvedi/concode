@@ -383,3 +383,33 @@ summary:focus {
 .sponsors-tab img:hover {
   transform: scale(1.2);
 }
+
+footer {
+  color: #D9D8D7;
+  padding: 20vh 10vh 8vh 10vh;
+  text-align: center;
+  margin: auto;
+}
+
+footer h6 {
+float: left;
+  color: #555;
+}
+
+footer a {
+  text-align: right;
+  justify-items: right;
+  align-items: right;
+  float: right;
+  color: #555;
+  margin-left: 5vh;
+}
+
+i {
+  color: #555;
+  font-size: 3vh;
+}
+
+i:hover {
+  color: #fff;
+}
