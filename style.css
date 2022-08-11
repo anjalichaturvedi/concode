@@ -101,22 +101,6 @@ span {
   margin-top: 5vh;
 }
 
-@media only screen and (min-width: 600px) {
-  .home h1, p {
-    margin-right: 5vh;
-    margin-left: -10vh;
-  }
-
-  .home p {
-    margin-top: 1vh;
-  }
-
-  .home img {
-    text-align: center;
-    margin-right: 12vh;
-    margin-bottom: 3vh;
-  }
-}
 
 .reg-btn {
   background: rgba(114, 146, 173, 0.5);
