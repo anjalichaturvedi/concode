@@ -101,6 +101,18 @@ span {
   margin-top: 5vh;
 }
 
+@media (max-width:390px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+  .home {
+    margin-left: 20vh;
+    margin-right: -20vh;
+  }
+
+  .home img {
+    margin-right: 5vh;
+    padding-bottom: 10vh;
+    padding-top: 10vh;
+  }
+}
 
 .reg-btn {
   background: rgba(114, 146, 173, 0.5);
@@ -139,8 +151,6 @@ span {
   right: 0;
   color: #fff;
 }
-
-
 
 .cookie-banner {
   position: fixed;
@@ -182,10 +192,19 @@ span {
 .numbers {
   display: flex;
   margin-top: 50px;
-  margin-bottom: 20px;;
+  margin-bottom: 20px;
 }
 
-@media only screen and (min-width: 600px) {
+@media (max-width:390px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+  .about h1 {
+    margin-left: 20vh;
+    margin-right: -30vh;
+  }
+
+  .about h5 {
+    margin-left: 20vh;
+    margin-right: -30vh;
+  }
 }
 
 .reach {
@@ -223,13 +242,6 @@ span {
   border-radius: 30px;
 }
 
-.bottom-align-text {
-  position: absolute;
-  bottom: 0;
-  text-align: left;
-  right: 50%;
-  left: 50%;
-}
 
 .abt-tb {
  width: 100%;
@@ -246,6 +258,24 @@ span {
 
 .abt-tb h5 {
   padding-left: 10%;
+}
+ 
+@media (max-width:390px) {
+  .abt-tb {
+    margin-left: 1vh;
+    margin-right: 0vh;
+    margin-bottom: 30px;
+   }
+
+   .abt-tb h1 {
+    padding-top: 15vh;
+    bottom: 0;
+    padding-left: 10%;
+  }
+  
+  .abt-tb h5 {
+    padding-left: 10%;
+  }
 }
 
 .summary-title {
@@ -318,6 +348,19 @@ summary:focus {
   text-decoration: underline;
 }
 
+ 
+@media (max-width:390px) {
+  .faq details {
+    margin-left: 20vh;
+    margin-right: -20vh;
+  }
+
+  .summary-title {
+    margin-left: 15vh;
+    margin-right: -30vh;
+  }
+}
+
 .sponsors-tab {
   text-align: center;
   justify-items: center;
@@ -332,6 +375,13 @@ summary:focus {
 
 .sponsors-tab h6 {
   color:#D9D8D7;
+}
+
+@media (max-width:390px) {
+  .sponsors-tab {
+    margin-left: 20vh;
+    margin-right: -20vh;
+  }
 }
 
 .sponsors-btn {
@@ -399,7 +449,7 @@ footer {
 }
 
 footer h6 {
-float: left;
+  float: left;
   color: #555;
 }
 
@@ -419,4 +469,33 @@ i {
 
 i:hover {
   color: #fff;
+}
+
+@media (max-width:390px) {
+  footer {
+    margin-left: 20vh;
+    margin-right: -20vh;
+  }
+
+  footer a {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    float: center;
+    text-align: center;
+    margin-left: 0vh;
+ }
+
+  footer h6 {
+    float: none;
+    text-align: center;
+    margin-left: 0vh;
+    margin-right: -0vh;
+  }
+
+  i {
+    padding-top: 3vh;
+    font-size: 2vh;
+    margin-right: 3vh;
+  }
 }
