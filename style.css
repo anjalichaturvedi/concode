@@ -125,7 +125,6 @@ span {
 @media (max-width:460px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
   .home {
     margin-left: 5vh;
-    margin-right: -5vh;
   }
 
   .home img {
@@ -133,9 +132,12 @@ span {
     padding-bottom: 10vh;
     padding-top: 10vh;
     width: 250px;
- 
   }
 
+  .home h1 {
+    font-size: 40px;
+  }
+  
   .workshops {
     display: none;
   }
@@ -455,6 +457,14 @@ summary:focus {
     margin-right: vh;
     width: 100%;
   }
+
+  .faq details {
+    margin: 2rem;
+  }
+
+  .faq summary {
+    width: 90%;
+  }
 }
 
 .sponsors-tab {
@@ -483,7 +493,6 @@ summary:focus {
 @media (max-width:460px) {
   .sponsors-tab {
     margin-left: 5vh;
-    margin-right: -5vh;
   }
 }
 
