@@ -447,6 +447,13 @@ summary:focus {
 }
 
 @media (max-width:460px) {
+
+  .summary-title h2 {
+    font-size: 40px;
+    text-align: left;
+    margin-left: 0vh;
+  }
+
   .faq details {
     margin-left: 5vh;
     margin-right: -5vh;
