@@ -94,6 +94,7 @@ span {
   width: 450px;
   margin-right: 20vh;
   margin-top: -10vh;
+  display: none;
 }
 
 .home h1 {
