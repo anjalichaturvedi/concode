@@ -14,9 +14,6 @@ html {
   color: white;
 }
 
-html {
-  width: 100%;
-}
 ::selection {
   background-color: #555;
 }
@@ -110,8 +107,8 @@ span {
 
 @media (max-width:390px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
   .home {
-    margin-left: 20vh;
-    margin-right: -20vh;
+    margin-left: 10vh;
+    margin-right: -10vh;
   }
 
   .home img {
@@ -127,12 +124,12 @@ span {
 
 @media (max-width:460px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
   .home {
-    margin-left: 13vh;
-    margin-right: -20vh;
+    margin-left: 10vh;
+    margin-right: -15vh;
   }
 
   .home img {
-    margin-right: 8vh;
+    float: none;
     padding-bottom: 10vh;
     padding-top: 10vh;
   }
