@@ -229,6 +229,13 @@ span {
   text-align: center;
 }
 
+.cookie-banner a {
+  color: white;
+}
+
+.cookie-banner a:hover {
+  color: white;
+}
 .close {
   position: absolute;
   height: 5px;
@@ -548,6 +555,15 @@ summary:focus {
   opacity: 1;
   right: 0;
   color: #fff;
+}
+
+.sponsors-btn a {
+  color: white
+}
+
+.sponsors-btn a:hover {
+  color: white;
+  text-decoration: none;
 }
 
 .sponsors-tab h5 {
