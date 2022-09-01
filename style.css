@@ -116,6 +116,10 @@ span {
     padding-bottom: 10vh;
     padding-top: 10vh;
   }
+
+ .workshops {
+    display: none;
+  }
 }
 
 @media (max-width:460px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
@@ -128,6 +132,10 @@ span {
     margin-right: 5vh;
     padding-bottom: 10vh;
     padding-top: 10vh;
+  }
+
+  .workshops {
+    display: none;
   }
 }
 
