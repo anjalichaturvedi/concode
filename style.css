@@ -451,7 +451,7 @@ summary:focus {
 @media (max-width:460px) {
 
   .summary-title h2 {
-    font-size: 40px;
+    font-size: 35px;
     text-align: left;
     margin-left: 0vh;
   }
@@ -501,7 +501,11 @@ summary:focus {
 
 @media (max-width:460px) {
   .sponsors-tab {
-    margin-left: 5vh;
+    margin-left: 10vh;
+  }
+
+  .sponsors-tab h2 {
+    font-size: 35px;
   }
 }
 
@@ -628,7 +632,7 @@ i:hover {
 
   footer {
     margin-left: 5vh;
-    margin-right: -5vh;
+    margin-right: -10vh;
   }
 
   footer a {
