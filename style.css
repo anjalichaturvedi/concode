@@ -137,6 +137,30 @@ span {
   .workshops {
     display: none;
   }
+
+  .reach {
+    display: none;
+  }
+
+  .numbers {
+    display: none;
+  }
+
+  .about {
+    display: none;
+  }
+
+  .projects {
+    display: none;
+  }
+
+  .hackers {
+    display: none;
+  }
+
+  .sponsors {
+    display: none;
+  }
 }
 
 
