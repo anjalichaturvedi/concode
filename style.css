@@ -14,6 +14,9 @@ html {
   color: white;
 }
 
+html {
+  width: 100%;
+}
 ::selection {
   background-color: #555;
 }
@@ -124,12 +127,12 @@ span {
 
 @media (max-width:460px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
   .home {
-    margin-left: 25vh;
-    margin-right: -25vh;
+    margin-left: 13vh;
+    margin-right: -20vh;
   }
 
   .home img {
-    margin-right: 5vh;
+    margin-right: 8vh;
     padding-bottom: 10vh;
     padding-top: 10vh;
   }
@@ -432,8 +435,8 @@ summary:focus {
  
 @media (max-width:390px) {
   .faq details {
-    margin-left: 20vh;
-    margin-right: -20vh;
+    margin-left: 15vh;
+    margin-right: -15vh;
   }
 
   .summary-title {
@@ -444,13 +447,14 @@ summary:focus {
 
 @media (max-width:460px) {
   .faq details {
-    margin-left: 20vh;
-    margin-right: -20vh;
+    margin-left: 10vh;
+    margin-right: -10vh;
   }
 
   .summary-title {
-    margin-left: 15vh;
+    margin-left: 5vh;
     margin-right: -30vh;
+    width: 100%;
   }
 }
 
@@ -479,8 +483,8 @@ summary:focus {
 
 @media (max-width:460px) {
   .sponsors-tab {
-    margin-left: 20vh;
-    margin-right: -20vh;
+    margin-left: 13vh;
+    margin-right: -10vh;
   }
 }
 
@@ -602,8 +606,8 @@ i:hover {
 
 @media (max-width:460px) {
   footer {
-    margin-left: 20vh;
-    margin-right: -20vh;
+    margin-left: 10vh;
+    margin-right: -10vh;
   }
 
   footer a {
