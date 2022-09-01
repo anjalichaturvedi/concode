@@ -133,6 +133,7 @@ span {
     padding-bottom: 10vh;
     padding-top: 10vh;
     width: 350px;
+    display: none;
   }
 
   .workshops {
