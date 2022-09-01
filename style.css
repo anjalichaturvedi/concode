@@ -44,6 +44,7 @@ body {
   color: #fff;
 }
 
+
 /* Change navbar styling on scroll */
 .navbar.active {
   background: black;
@@ -62,6 +63,13 @@ body {
 
 .navbar.active .navbar-brand {
   color: #555;
+}
+
+@media (max-width:460px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+  .navbar .navbar-brand,
+  .navbar .nav-link {
+    color: #fff;
+  }
 }
 
 /* Change navbar styling on small viewport */
