@@ -124,16 +124,16 @@ span {
 
 @media (max-width:460px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
   .home {
-    margin-left: 10vh;
-    margin-right: -15vh;
+    margin-left: 5vh;
+    margin-right: -5vh;
   }
 
   .home img {
     float: none;
     padding-bottom: 10vh;
     padding-top: 10vh;
-    width: 350px;
-    display: none;
+    width: 250px;
+ 
   }
 
   .workshops {
@@ -439,20 +439,20 @@ summary:focus {
   }
 
   .summary-title {
-    margin-left: 15vh;
-    margin-right: -30vh;
+    margin-left: 5vh;
+    margin-right: -15vh;
   }
 }
 
 @media (max-width:460px) {
   .faq details {
-    margin-left: 10vh;
-    margin-right: -10vh;
+    margin-left: 5vh;
+    margin-right: -5vh;
   }
 
   .summary-title {
     margin-left: 5vh;
-    margin-right: -30vh;
+    margin-right: vh;
     width: 100%;
   }
 }
@@ -482,8 +482,8 @@ summary:focus {
 
 @media (max-width:460px) {
   .sponsors-tab {
-    margin-left: 13vh;
-    margin-right: -10vh;
+    margin-left: 5vh;
+    margin-right: -5vh;
   }
 }
 
@@ -604,9 +604,13 @@ i:hover {
 }
 
 @media (max-width:460px) {
+  .cookie-banner {
+    display: none;
+  }
+
   footer {
-    margin-left: 10vh;
-    margin-right: -10vh;
+    margin-left: 5vh;
+    margin-right: -5vh;
   }
 
   footer a {
