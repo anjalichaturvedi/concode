@@ -14,10 +14,6 @@ html {
   color: white;
 }
 
-::selection {
-  background-color: #555;
-}
-
 body {
   background-color: black;
 }
@@ -236,6 +232,7 @@ span {
 .cookie-banner a:hover {
   color: white;
 }
+
 .close {
   position: absolute;
   height: 5px;
@@ -469,8 +466,7 @@ summary:focus {
   }
 
   .faq details {
-    margin-left: 5vh;
-    margin-right: -5vh;
+    margin-left: 25vh;
   }
 
   .summary-title {
@@ -491,7 +487,7 @@ summary:focus {
 .sponsors-tab {
   text-align: center;
   justify-items: center;
-  margin-top: 30vh;
+  margin-top: 15vh;
   margin-left: 20%;
   margin-right: 20%;
 }
@@ -586,7 +582,13 @@ summary:focus {
   transform: scale(1.2);
 }
 
+@media (max-width:460px) {
+  .sponsors-tab img {
+    width: 24vh;
+  }
+}
 
+/* footer */
 footer {
   color: #D9D8D7;
   padding: 20vh 10vh 8vh 10vh;
@@ -678,4 +680,3 @@ i:hover {
     margin-right: 3vh;
   }
 }
-
