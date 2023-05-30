@@ -28,4 +28,6 @@ a {
 
 a:hover {
     color:wheat;
+    text-decoration: underline;
+
 }
