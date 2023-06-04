@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Concode</title>
+  <style>
+    /* Add CSS styles for the navbar */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Source Sans', sans-serif; /* Add the font-family property */
+      background-color: #1E1E1E;
+      color: #ffffff;
+    }
+    
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      transition: background-color 0.3s ease;
+      margin: 20px; /* Add margin to the navbar */
+    }
+
+    .navbar.transparent {
+      background-color: transparent;
+    }
+
+    .navbar.solid {
+      background-color: #ffffff; /* Change to your desired solid color */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .navbar li {
+      margin: 0 15px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #ffffff;
+    }
+    /* Add CSS styles for the clouds */
+    .cloud {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 200px; /* Adjust the cloud size as needed */
+      height: 100px;
+      background-color: #ffffff; /* Change to your desired cloud color */
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%; /* Adjust the cloud shape */
+      z-index: 1;
+    }
+
+    .cloud::before,
+    .cloud::after {
+      content: "";
+      position: absolute;
+      background-color: inherit;
+      border-radius: 50%;
+      z-index: -1;
+    }
+
+    .cloud::before {
+      width: 80px;
+      height: 80px;
+      top: -30px;
+      left: 30px;
+    }
+
+    .cloud::after {
+      width: 120px;
+      height: 120px;
+      top: -10px;
+      right: 30px;
+    }
+    /* Add CSS styles for the buildings */
+    .building {
+      position: absolute;
+      bottom: 0;
+      width: 150px; /* Adjust the building size as needed */
+      height: 230px; /* Adjust the building size as needed */
+      background-color: #2E4F4F; /* Change to your desired building color */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .building:nth-child(2n) {
+      background-color: #2E4F4F; /* Change to your desired building color */
+    }
+
+    .building:nth-child(3n) {
+      background-color: #2E4F4F; /* Change to your desired building color */
+    }
+
+    .building:nth-child(4n) {
+      background-color: #2E4F4F; /* Change to your desired building color */
+    }
+    /* Add CSS styles for the windows */
+    .building .window {
+      position: absolute;
+      background-color: #CBE4DE; /* Change to your desired window color */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .building .window:nth-child(2n) {
+      background-color: #CBE4DE; /* Change to your desired window color */
+    }
+
+    .building .window:nth-child(3n) {
+      background-color: #CBE4DE; /* Change to your desired window color */
+    }
+
+    .building .window:nth-child(4n) {
+      background-color: #CBE4DE; /* Change to your desired window color */
+    }
+    .building .window:nth-child(5n) {
+      background-color: #CBE4DE; /* Change to your desired window color */
+    }
+    .building .window:nth-child(6n) {
+      background-color: #CBE4DE; /* Change to your desired window color */
+    }
+    .rotating-heading {
+      text-align: center;
+      margin-top: 150px;
+      padding-left: 200px;
+      padding-right: 200px;
+    }
+
+    .rotating-heading h1 {
+      font-size: 30px;
+      font-weight: bold;
+      transition: transform 0.7s cubic-bezier(1.175, 0.885, 0.32, 1.275);
+    }
+
+    .rotating-heading.show {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .rotating-heading h1 span {
+      color: #ff0000; /* Change to your desired word color */
+    }
+    
+     /* Add CSS styles for the rounded button */
+     .join-us-button {
+      display: inline-block;
+      padding: 10px 20px;
+      border: none;
+      background-color: #000000; /* Change to your desired button background color */
+      color: #ffffff; /* Change to your desired button text color */
+      font-family: 'Source Sans', sans-serif; /* Add the font-family property */
+      font-size: 16px;
+      position: absolute;
+      left: 50%;
+      top: 45%;
+      transform: translate(-50%, -50%);
+      border-radius: 50px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .join-us-button::after {
+      content: '';
+      position: absolute;
+      top: 70%;
+      right: -25px;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 30px;
+      background-color: #ffffff; /* Change to your desired arrow color */
+      clip-path: polygon(20% 25%, 0% 0%, 0% 50%);
+      transition: transform 0.3s ease;
+    }
+
+    .join-us-button:hover {
+      background-color: #333333; /* Change to your desired button hover background color */
+    }
+
+    .join-us-button:hover::after {
+      transform: translateY(-50%) translateX(100%);
+    }
+  </style>
+  <script>
+    // Add JavaScript to handle the scroll event
+    window.addEventListener("scroll", function() {
+      var navbar = document.querySelector(".navbar");
+      navbar.classList.toggle("transparent", window.scrollY === 0);
+      navbar.classList.toggle("solid", window.scrollY > 0);
+    });
+    // Add JavaScript to rotate the words in the heading
+    document.addEventListener("DOMContentLoaded", function() {
+      var heading = document.querySelector(".rotating-heading h1");
+      var words = ["developing", "creating", "coding", "designing"];
+      var index = 0;
+
+      setInterval(function() {
+        heading.classList.remove("show");
+        setTimeout(function() {
+          var span = document.createElement("span");
+          span.textContent = words[index];
+          span.style.color = getRandomColor(); // Call the function to get a random color
+          heading.innerHTML = "Making tech inclusive and accessible where anyone can spark their passion for ";
+          heading.appendChild(span);
+          heading.classList.add("show");
+        }, 300);
+        index = (index + 1) % words.length;
+      }, 3000);
+    });
+    // Function to generate random color
+    function getRandomColor() {
+      var letters = "0123456789ABCDEF";
+      var color = "#";
+      for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+  </script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans:wght@400&display=swap">
+</head>
+
+<body>
+  <!-- Add the navbar HTML code -->
+  <nav class="navbar transparent">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="rotating-heading">
+    <h1>Making tech inclusive and accessible where anyone can spark their passion for developing</h1>
+  </div>
+  <div class="join-us-button">
+    Join Us
+  </div>
+  <div class="building" style="left: 13%;">
+    <div class="window" style="top: 20%; left: 10%; width: 30%; height: 15%;"></div>
+    <div class="window" style="top: 45%; left: 10%; width: 30%; height: 15%;"></div>
+    <div class="window" style="top: 70%; left: 10%; width: 30%; height: 15%;"></div>
+    <div class="window" style="top: 20%; left: 55%; width: 30%; height: 15%;"></div>
+    <div class="window" style="top: 45%; left: 55%; width: 30%; height: 15%;"></div>
+    <div class="window" style="top: 70%; left: 55%; width: 30%; height: 15%;"></div>
+  </div>
+  <div class="building" style="left: 28%;">
+    <div class="window" style="top: 20%; left: 10%; width: 30%; height: 15%;"></div>
+    <div class="window" style="top: 45%; left: 10%; width: 30%; height: 15%;"></div>
+    <div class="window" style="top: 70%; left: 10%; width: 30%; height: 15%;"></div>
+    <div class="window" style="top: 20%; left: 55%; width: 30%; height: 15%;"></div>
+    <div class="window" style="top: 45%; left: 55%; width: 30%; height: 15%;"></div>
+    <div class="window" style="top: 70%; left: 55%; width: 30%; height: 15%;"></div>
+  </div>
+  <div class="building" style="left: 43%;">
+    <div class="window" style="top: 20%; left: 10%; width: 30%; height: 15%;"></div>
+    <div class="window" style="top: 45%; left: 10%; width: 30%; height: 15%;"></div>
+    <div class="window" style="top: 70%; left: 10%; width: 30%; height: 15%;"></div>
+    <div class="window" style="top: 20%; left: 55%; width: 30%; height: 15%;"></div>
+    <div class="window" style="top: 45%; left: 55%; width: 30%; height: 15%;"></div>
+    <div class="window" style="top: 70%; left: 55%; width: 30%; height: 15%;"></div>
+  </div>
+  <div class="building" style="left: 58%;">
+    <div class="window" style="top: 20%; left: 10%; width: 30%; height: 15%;"></div>
+    <div class="window" style="top: 45%; left: 10%; width: 30%; height: 15%;"></div>
+    <div class="window" style="top: 70%; left: 10%; width: 30%; height: 15%;"></div>
+    <div class="window" style="top: 20%; left: 55%; width: 30%; height: 15%;"></div>
+    <div class="window" style="top: 45%; left: 55%; width: 30%; height: 15%;"></div>
+    <div class="window" style="top: 70%; left: 55%; width: 30%; height: 15%;"></div>
+  </div>
+  <div class="building" style="left: 73%;">
+    <div class="window" style="top: 20%; left: 10%; width: 30%; height: 15%;"></div>
+    <div class="window" style="top: 45%; left: 10%; width: 30%; height: 15%;"></div>
+    <div class="window" style="top: 70%; left: 10%; width: 30%; height: 15%;"></div>
+    <div class="window" style="top: 20%; left: 55%; width: 30%; height: 15%;"></div>
+    <div class="window" style="top: 45%; left: 55%; width: 30%; height: 15%;"></div>
+    <div class="window" style="top: 70%; left: 55%; width: 30%; height: 15%;"></div>
+  </div>
+  <!-- Add the rest of your webpage content below -->
+  <section id="home">
+    <!-- Home content goes here -->
+  </section>
+
+  <section id="about">
+    <!-- About content goes here -->
+  </section>
+
+  <section id="contact">
+    <!-- Contact content goes here -->
+  </section>
+</body>
+</html>
