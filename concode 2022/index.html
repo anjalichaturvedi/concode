@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="navbar">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Past Programs</a>
+                </li>
+                <li>
+                    <a href="mailto:hello@concode.io">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="landing">
+            <div class="image-landing">
+                <img src="landing.jpg" alt="">
+            </div>
+            <div class="content">
+                <h1>
+                    Making tech inclusive and accessible where anyone can spark their
+                    <span class="highlight">passion for
+                        <span class="rotating-words">
+                        </span
+          >
+                    </span>
+                </h1>
+                <div class="join-button">
+                    <a href="mailto:hello@concode.io">Join Us</a>
+                </div>
+            </div>
+        </div>
+        <div class="holder">
+            <div class="container">
+                <div>
+                    <h1>
+                        We are constantly
+                        <br>
+                        trying to
+                        <span class="sec-highlight"> curate programs</span>
+                        <br>
+                        for you!
+                    </h1>
+                </div>
+                <div class="section" onclick="toggleOverlay(1)" style="margin-left: 40px">
+                    <img src="image1.jpg" alt="">
+                </div>
+                <div class="section" onclick="toggleOverlay(2)">
+                    <img src="image2.jpg" alt="">
+                </div>
+                <div class="section" onclick="toggleOverlay(3)">
+                    <img src="image3.jpg" alt="">
+                </div>
+            </div>
+            <div class="overlay">
+                <div class="overlay-content">
+                    <span class="close-btn" onclick="closeOverlay()">&times;</span>
+                    <h2 id="overlay-title"></h2>
+                    <p id="overlay-description"></p>
+                </div>
+            </div>
+        </div>
+        <div class="impact">
+            <div class="impact-container">
+                <h2>What's the problem?</h2>
+                <img src="prob.jpg" alt="">
+            </div>
+        </div>
+        <div class="impact-sec">
+            <h2 style="margin-top: 30px; text-align: center">With Concode 2022</h2>
+            <div class="sub-section">
+                <h2>80k+</h2>
+                <h5>Reach</h5>
+            </div>
+            <div class="sub-section">
+                <h2>46</h2>
+                <h5>Countries</h5>
+            </div>
+            <div class="sub-section">
+                <h2>19</h2>
+                <h5>Sponsors</h5>
+            </div>
+            <div class="sub-section">
+                <h2>1300+</h2>
+                <h5>Registrations</h5>
+            </div>
+            <div class="sub-section">
+                <h2>35+</h2>
+                <h5>Team Members</h5>
+            </div>
+            <div class="sub-section">
+                <h2>450+</h2>
+                <h5>First-time Hackers</h5>
+            </div>
+        </div>
+        <div class="sidebar">
+            <ul class="social-links">
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <footer class="footer">
+          <p class="footer-text">&copy; 2023 Concode. All rights reserved.</p>
+        </footer>
+        <script src="script.js"></script>
+        <script src="https://kit.fontawesome.com/88a07dff5d.js" crossorigin="anonymous"></script>
+    </body>
+</html>
