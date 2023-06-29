@@ -1,4 +1,4 @@
-const rotatingWordsElement = document.querySelector(".rotating-words");
+      const rotatingWordsElement = document.querySelector(".rotating-words");
       const rotatingWords = ["developing", "creativity", "designing"];
       let currentIndex = 0;
 
@@ -40,3 +40,5 @@ const rotatingWordsElement = document.querySelector(".rotating-words");
         // Hide the overlay
         overlay.classList.remove("active");
       }
+
+      
